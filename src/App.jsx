@@ -396,8 +396,9 @@ export default function CyberSecurityPage() {
               ].map((item) => (
                 <div
                   key={item}
-                  className="border border-[#C9A84C]/30 bg-[#C9A84C]/10 text-[#C9A84C] px-4 py-2 text-xs rounded-sm"
+                  className="flex gap-2 border border-[#C9A84C]/30 bg-[#C9A84C]/10 text-[#C9A84C] px-4 py-2 text-xs rounded-sm"
                 >
+                  <div className="w-[5px] h-[5px] rounded-full bg-[#C9A84C] mt-[6px] " />
                   {item}
                 </div>
               ))}
@@ -669,7 +670,7 @@ export default function CyberSecurityPage() {
 
       {/* <!-- CAREER OUTCOMES & TOOLS --> */}
       <section id="outcomes" className="bg-white">
-        <div className="max-w-7xl mx-auto py-10 md:py-20 px-5 md:px-10 lg:px-16">
+        <div className="max-w-7xl mx-auto px-5 lg:px-12 py-10 lg:py-24">
           <div className="grid lg:grid-cols-2 gap-14">
             {/* Left Content */}
             <div>
@@ -768,8 +769,8 @@ export default function CyberSecurityPage() {
       </section>
 
       {/* <!-- HOW IT WORKS --> */}
-      <section className="py-10 md:py-[120px] bg-black overflow-hidden">
-        <div className="max-w-[1280px] mx-auto px-5 lg:px-10">
+      <section className="bg-black overflow-hidden">
+        <div className="max-w-[1280px] mx-auto px-5 lg:px-12 py-10 lg:py-24">
           {/* Eyebrow */}
           <div className="flex items-center gap-3 mb-6">
             <div className="w-10 h-[1px] bg-[#C9A84C]"></div>
@@ -816,8 +817,8 @@ export default function CyberSecurityPage() {
       </section>
 
       {/* <!-- TESTIMONIALS --> */}
-      <section className="py-10 md:py-[100px] bg-[#f8f6f1]">
-        <div className="max-w-[1280px] mx-auto px-5 lg:px-10">
+      <section className="bg-[#f8f6f1]">
+        <div className="max-w-[1280px] mx-auto px-5 lg:px-12 py-10 lg:py-24">
           {/* Header */}
           <div className="mb-16">
             <div className="flex items-center gap-3 mb-6">
@@ -890,7 +891,7 @@ export default function CyberSecurityPage() {
 
       {/* <!-- FAQ --> */}
       <section id="faq" className="bg-[#f8f6f1]">
-        <div className="max-w-7xl mx-auto py-10 md:py-20 lg:py-28 px-5 sm:px-8">
+        <div className="max-w-7xl mx-auto px-5 lg:px-12 py-10 lg:py-24">
           <div className="grid lg:grid-cols-[0.95fr_1.2fr] gap-14 lg:gap-20">
             {/* Left Side */}
             <div>
@@ -999,7 +1000,7 @@ export default function CyberSecurityPage() {
         id="enrol"
         className="bg-black overflow-hidden"
       >
-        <div className="max-w-7xl mx-auto py-10 md:py-20 lg:py-28 px-5 sm:px-8">
+        <div className="max-w-7xl mx-auto px-5 lg:px-12 py-10 lg:py-24">
           <div className="grid lg:grid-cols-[1fr_520px] gap-14 lg:gap-20 items-start">
             {/* Left Content */}
             <div className="pt-2">
@@ -1161,7 +1162,7 @@ export default function CyberSecurityPage() {
       {/* <!-- FOOTER --> */}
       <footer className="bg-black border-t border-white/10">
         {/* Top Footer */}
-        <div className="max-w-7xl mx-auto px-5 sm:px-8 py-10 md:py-16 lg:py-20">
+        <div className="max-w-7xl mx-auto px-5 lg:px-12 py-10 lg:py-24">
           <div className="grid lg:grid-cols-[1.3fr_0.8fr_0.8fr_0.9fr] gap-12 lg:gap-16">
             {/* Brand */}
             <div>
