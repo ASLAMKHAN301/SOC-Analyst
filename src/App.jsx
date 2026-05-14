@@ -38,6 +38,37 @@ const modules = [
       "Incident Detection with SIEM — Live Lab",
     ],
   },
+  {
+    id: "04",
+    tag: "Threat vector",
+    title: "Phishing Analysis in Detail",
+    topics: [
+      "Introduction to Phishing & Phishing Fundamentals",
+      "Real-World Phishing Campaigns - case Studies",
+      "Analysis of Phishing Emails & Header Forensics",
+    ],
+  },
+  {
+    id: "05",
+    tag: "Endpoint &amp; Malware",
+    title: "Endpoint Security & Malware Analysis",
+    topics: [
+      "Introduction to Endpoint Security",
+      "Antivirus & ePO (ePolicy Orchestrator)",
+      "Windows Logs Analysis & Sysinternals Tools",
+      "EDR vs XDR — Extended Detection & Response",
+      "Malware: Categories, Behaviour & Analysis",
+    ],
+  },
+  {
+    id: "06",
+    tag: "Advanced",
+    title: "Threat Hunting & Incident Response",
+    topics: [
+      "Introduction to Incident Response and Handling — Frameworks & Playbooks",
+      "Proactive Threat Hunting with Industry-Standard Tools",
+    ],
+  },
 ];
 
 const items = [
@@ -601,9 +632,16 @@ export default function CyberSecurityPage() {
                   </div>
                 </div>
 
-                <span className="text-3xl text-gray-500">
-                  {openModule === module.id ? "−" : "+"}
-                </span>
+                {/* Right */}
+                    <div className="flex items-center gap-5">
+                      <span className="text-[#6B7280] font-medium">
+                        {module.topics.length} topics
+                      </span>
+
+                      <div className="w-10 h-10 rounded-full border border-[#D7CFBF] flex items-center justify-center text-2xl bg-black text-[#C9A84C]">
+                        {openModule ? "−" : "+"}
+                      </div>
+                    </div>
               </button>
 
               {openModule === module.id && (
